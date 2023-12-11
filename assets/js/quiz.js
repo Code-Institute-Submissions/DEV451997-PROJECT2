@@ -106,3 +106,30 @@ shuffleArray(quizData);
 
 // Load the first question and start the quiz
 loadQuiz();
+
+// Add event listener to the submit button to handle user answers
+submitButton.addEventListener("click", () => {
+    let answer = getSelected();
+    if (answer) {
+      // Check if the selected answer is correct and update the score
+      if (answer === quizData[currentQuiz].correct) score++;
+      // Move to the next question if available, otherwise end the quiz
+      currentQuiz++;
+      if (currentQuiz < quizData.length) loadQuiz();
+      else {
+        // End of quiz
+        let message2 = document.getElementById("message2");
+        let quizEndSection2 = document.getElementById("quiz-end-section2");
+    
+        // Display the score
+        message2.innerText = `${score}/${quizData.length}`;
+    
+        // Show the quiz-end-section2
+        quizEndSection2.classList.remove("hide");
+    
+        // Hide the quiz container
+        let quizContainer = document.getElementById("quiz");
+        quizContainer.style.display = "none";
+      }
+    }
+  });
