@@ -74,3 +74,35 @@ function shuffleArray(array) {
     }
     timerElement.innerText = `Time Left: ${minutes}:${seconds.toString().padStart(2, "0")}`;    
   };
+
+  let timerInterval;
+
+  // Function to start the countdown timer
+  function startTimer() {
+    timerInterval = setInterval(initiateTimer, 1000); // Timer update interval set to 1 second (1000 ms).
+    } 
+    
+    function initiateTimer() {
+    timeLeft--;
+         updateTimerDisplay();
+         if (timeLeft <= 0) {
+           // Time's up, end the quiz
+           clearInterval(timerInterval);
+           endQuiz();
+         }
+    }
+  
+    function endQuiz() {
+      document.getElementById("message").innerHTML = `${score}/${quizData.length}`;
+      document.getElementById("quiz-end-section").classList.remove("hide");
+      
+      // Hide the quiz container
+      let quizContainer = document.getElementById("quiz");
+      quizContainer.style.display = "none"; // Hide the quiz container
+    }
+    
+  // Shuffle the quiz questions before starting the quiz
+shuffleArray(quizData);
+
+// Load the first question and start the quiz
+loadQuiz();
