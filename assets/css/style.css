@@ -1,0 +1,20 @@
+/* Import the Montserrat font from Google Fonts with two weights: 200 (Extra Light) and 400 (Regular) */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"); 
+
+/* Apply box-sizing property to all elements to include padding and borders in element sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Styles for the body */
+body {
+  background-color: rgb(182, 148, 11);
+  background-image: linear-gradient(315deg, rgb(182, 148, 11) 0%, #f5f7fa 100%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
