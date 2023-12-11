@@ -242,3 +242,84 @@ Used to store the project code after being created in GitPod / Git.
 Used to create, edit & preview the project's code.
 * [Google Fonts](https://fonts.google.com/)
 Used to select & import the fonts to the project.
+
+# Testing 
+
+## HTML Validation
+
+[HTML Validator](https://validator.w3.org/) The HTML pages were run through a HTML Validator.
+<details><summary>Landing Page</summary><img src="assets/images/home html validator.png"></details>
+<details><summary>Quiz Page</summary><img src="assets/images/quiz html validator.png"></details>
+
+### Errors
+
+Errors I encountered were recitified and noted in commit messages. Issue I had were:
+* Using a br element within an ol element. This threw an error stating a br element cannot be a child of ol element.
+* Secondly as I did not need anything in my h2 element for the questions. As this was being filled using Javascript. The Validator threw an error saying the value was empty. 
+* Thirdly I made the error having my script src for my JS files outside of my body element, thus showing an error.
+
+### Fixes
+
+* The first issue was fixed by removing the br element from my ol and using CSS styling to add padding-bottom to my list items.
+* Secondly I fixed the issue by adding quotation marks just to add something in there as mentioned Javascript was being used to add the questions.
+* I fixed the third issue by adding my script src inside the body element at the bottom after all other HTML code.
+
+## CSS Validation
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/) The CSS page was run through a CSS Validator.
+<details><summary>Stylesheet</summary><img src="assets/images/css validator.png"></details>
+
+### Errors
+
+I ran into no errors within my CSS file as I made sure to write quality code using:
+* Consistent naming convention
+* Organising the code into the order of the page flow.
+* Using concise and appropriate comments to outline what the code is doing and to what.
+Making sure I followed the above meant I did not need to fix any issues.
+
+## JS Validation
+
+[JS Validator](https://jshint.com/) The JS pages was run through a JS Validator.
+<details><summary>modal.js</summary><img src="assets/images/modal validator.png"></details>
+<details><summary>questions.js</summary><img src="assets/images/questions validator.png"></details>
+<details><summary>quiz.js</summary><img src="assets/images/quiz validator.png"></details>
+
+### Errors
+
+I ran into no issues with my modal.js file. Issues that did occur were:
+* Had an issue with my quiz.js file where the timerInterval variable was undefined.
+* Seecondly had an issue with the quizData variable being undefined in both quiz and questions.js.
+
+### Fixes
+
+* The first issue was fixed by creating a let variable containing timerInterval.
+* The second issue remains as the two files are both over 100 lines of code I wanted to keep them seperate for readability. The quiz runs smoothly with no issues and calls upon the quizData faultlessly.
+The validator returned no issues with my code other than an undefined variable.
+
+## Responsiveness
+
+The site was tested on the following devices:
+* Asus Vivobook Book Pro 16"
+* Samsung S23 Ultra
+* Samsung S20
+* Acer Chromebook 14"
+* Google Deveoloper tools. Utilizing all dimensions including the responsive option.
+
+## Deployment
+
+### GitHub Pages
+
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+* In the GitHub repository, navigate to the Settings tab at the top of the page.
+* In the left hand menu find and select 'Pages'.
+* From the source select Branch: main.
+* Click 'Save'.
+* A link will be displayed when published successfully which can be shared and accessed through deployments.
+
+## Credits
+
+When it came to building the quiz I gained inspiration from YouTube videos with channels such as:
+* [CodingNepal](https://www.youtube.com/@CodingNepal)
+* [Codehal](https://www.youtube.com/@codehal)
+
+These sparked my interest and allowed my to build my very own quiz. I also used [w3schools](https://www.w3schools.com/js/default.asp) to help with writing an array and additional features within my quiz. I also went back over Code Institutes study material to utilize as much Javascript as I could. Using these allowed me to create features such as event listeners and my question counter and timer features.
