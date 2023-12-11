@@ -22,3 +22,17 @@ function shuffleArray(array) {
     }
   }
     
+
+ // Function to clear the selection of answer choices
+ let deselectAnswers = () => {
+    answerElements.forEach((answer) => (answer.checked = false));
+  };
+  
+  // Function to get the ID of the selected answer choice
+  let getSelected = () => {
+    let answer;
+    answerElements.forEach((answerElement) => {
+      if (answerElement.checked) answer = answerElement.id;
+    });
+    return answer;
+  };
