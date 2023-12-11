@@ -18,3 +18,11 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+/* Home page header */
+.home-header {
+    position: relative;
+    padding-bottom: 500px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
