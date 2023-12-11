@@ -133,3 +133,65 @@ body {
     max-width: 95vw;
     overflow: hidden;
   }
+
+/* Styles for the quiz content area */
+.quiz-top {
+    padding: 1rem 3rem;
+  }
+  
+  /* Styles for the quiz question display */
+  h2 {
+    padding: 1.3rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Styles for the unordered list (answer choices) */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styles for each list item (answer choice) */
+  ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+
+  /* Pointer for the answer text */
+  label {
+    cursor: pointer;
+  }
+  
+  /* Styles for the radio buttons */
+  #a,
+  #b,
+  #c,
+  #d {
+    accent-color: brown;
+    cursor: pointer;
+  }
+
+  /* Styles for the buttons */
+button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+  }
+  
+  /* Styles for the button on hover */
+  button:hover {
+    background-color: rgb(228, 211, 134);
+  }
+  
+  /* Styles for the button when focused */
+  button:focus {
+    outline: none;
+    background-color: black;
+  }
