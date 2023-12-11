@@ -58,3 +58,19 @@ function shuffleArray(array) {
       startTimer();
     }
   };
+
+  // Function to update the timer display with the remaining time
+  let updateTimerDisplay = () => {
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+   
+    // Check if time is 10 seconds or less, and apply red color if true
+    if (timeLeft <= 30) {
+      timerElement.classList.add("timer-red");
+      timerElement.classList.remove("timer-black");
+    } else {
+      timerElement.classList.add("timer-black");
+      timerElement.classList.remove("timer-red");
+    }
+    timerElement.innerText = `Time Left: ${minutes}:${seconds.toString().padStart(2, "0")}`;    
+  };
