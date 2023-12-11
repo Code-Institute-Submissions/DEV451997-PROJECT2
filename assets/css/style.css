@@ -87,3 +87,16 @@ body {
   .hide {
     display : none;
   }
+
+  /* Styles for the quiz container header */
+  .quiz-container header h1 {
+    padding-top: 50px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Styles for anchor tag header to return home */
+  .quiz-container header h1 a {
+    color: black;
+    padding-top: 10px;
+  }
