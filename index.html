@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Travel Games</title>
-  </head>
+</head>
 
-  </html>
+<body>
 
-  <body>
-
-<!-- Header section -->
-<div class="home-header">
-    <h1>Travel Hub.</h1>
-    <p>"Test your global savvy! Take our travel quiz and unlock the secrets of the world."</p>
-  </div>
-
-   <!-- Modal for quiz rules -->
-   <div id="rulesModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-
-      <!-- Quiz rules content -->
-      <h2>Quiz Rules</h2>
-      <ol>
-        <li>You have 1 minute and 30 seconds to answer 15 questions!</li>
-        <li>Select an answer and click "Next" to progress onto the next question.</li>
-        <li>At the end of the quiz or when the time runs out. You will be displayed with your final
-          score out of 15 and you will have the option to play again.</li>
-        <li>The quiz begins as soon as you hit the start button. Good Luck and Enjoy!</li>
-      </ol>
-
-      <!-- Button to start the quiz -->
-      <button id="startQuizBtn">
-        Start Quiz!!
-      </button>
+    <!-- Header section -->
+    <div class="home-header">
+        <h1>Travel Hub.</h1>
+        <p>"Test your global savvy! Take our travel quiz and unlock the secrets of the world."</p>
     </div>
-  </div>
 
-  </body>
+    <!-- Modal for quiz rules -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <!-- Quiz rules content -->
+            <h2>Quiz Rules</h2>
+            <ol>
+                <li>You have 1 minute and 30 seconds to answer 15 questions!</li>
+                <li>Select an answer and click "Next" to progress onto the next question.</li>
+                <li>At the end of the quiz or when the time runs out. You will be displayed with your final
+                    score out of 15 and you will have the option to play again.</li>
+                <li>The quiz begins as soon as you hit the start button. Good Luck and Enjoy!</li>
+            </ol>
+
+            <!-- Button to start the quiz -->
+            <button id="startQuizBtn">
+                Start Quiz!!
+            </button>
+        </div>
+    </div>
+
+    <!-- Button to open the quiz rules modal -->
+    <button id="openModalBtn">View Quiz Rules</button>
+
+    <!-- External JavaScript file for modal functionality -->
+    <script src="assets/js/modal.js"></script>
+</body>
+
+</html>
