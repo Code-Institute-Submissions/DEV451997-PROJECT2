@@ -13,3 +13,12 @@ const timerElement = document.getElementById("timer");
 let currentQuiz = 0;
 let score = 0;
 let timeLeft = 0;
+
+// Function to shuffle the order of elements in the array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+  }
+    
