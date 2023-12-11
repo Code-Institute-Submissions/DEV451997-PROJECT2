@@ -36,3 +36,25 @@ function shuffleArray(array) {
     });
     return answer;
   };
+
+  // Function to load and display the current quiz question and answer choices
+  let loadQuiz = () => {
+    deselectAnswers();
+    let currentQuizData = quizData[currentQuiz];
+    questionElement.innerText = currentQuizData.question;
+    a_text.innerText = currentQuizData.a;
+    b_text.innerText = currentQuizData.b;
+    c_text.innerText = currentQuizData.c;
+    d_text.innerText = currentQuizData.d;
+  
+    // Counts what questions the user is on and increments by one
+    let questionCounterElement = document.getElementById("question-counter");
+    questionCounterElement.innerText = `${currentQuiz + 1} of ${quizData.length}`;
+  
+    // If it's the first question, set the initial time and start the timer
+    if (currentQuiz === 0) {
+      timeLeft = 90; // Time left for quiz (in seconds).
+      updateTimerDisplay();
+      startTimer();
+    }
+  };
