@@ -201,3 +201,44 @@ User Story 3: As a newcomer to both travel and quizzes, I want to:
 <img src="assets/images/end game home action.gif">
 
 </details>
+
+## Future Features
+
+Some additional features I would like to add in the future are as follows:
+* Maze game.
+* Tile matching game.
+As the website is set up as a Hub. The landing page acts as an area for future games to be added. 
+
+# Design and structure
+
+## Structure
+
+The site is simple and made up of a landing page and the quiz page.
+
+* Landing Page - This includes a short and snappy header telling the user what the page is. Along with a button to explain the quiz further.
+* Quiz Page - This includes the main quiz. Everything is centered in a responsive container. This page also houses the play again feature and return home feature once the quiz has concluded.
+
+### Colors
+
+* After my online research I wanted to make a clean and concise quiz. I chose to use a bright yellow as the main color for my quiz website to promote happiness and creativity. 
+* My second color choice was black and this is a big contrast to yellow and it allows the user to clearly see questions and rules regarding the main part of the site which is the quiz. 
+* Finally to contrast the black I used white so the user can clearly see where they need to click to navigate onto the quiz and through the questions.
+
+### Fonts 
+
+I imported [Google Fonts](https://fonts.google.com/) using the [Montserrat](https://fonts.google.com/specimen/Montserrat) font. I used this for the whole site for continuity and how easy it is to read.
+
+### Languages Used
+
+[HTML](https://www.w3schools.com/html/html_intro.asp), [CSS](https://www.w3schools.com/Css/) and [Javacript](https://www.w3schools.com/Js/) were used to create this project. Information from w3schools is provided via the links.
+
+### Tools
+
+* [Git](https://git-scm.com/)
+Used for version control via GitPod by using the terminal to Git and Push to GitHub.
+* [GitHub](https://github.com/)
+Used to store the project code after being created in GitPod / Git.
+* [Gitpod](https://www.gitpod.io/)
+Used to create, edit & preview the project's code.
+* [Google Fonts](https://fonts.google.com/)
+Used to select & import the fonts to the project.
