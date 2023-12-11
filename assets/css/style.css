@@ -1,22 +1,22 @@
 /* Import the Montserrat font from Google Fonts with two weights: 200 (Extra Light) and 400 (Regular) */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
 
 /* Apply box-sizing property to all elements to include padding and borders in element sizing */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Styles for the body */
 body {
-  background-color: rgb(182, 148, 11);
-  background-image: linear-gradient(315deg, rgb(182, 148, 11) 0%, #f5f7fa 100%);
-  font-family: "Montserrat", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    background-color: rgb(182, 148, 11);
+    background-image: linear-gradient(315deg, rgb(182, 148, 11) 0%, #f5f7fa 100%);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 /* Home page header */
@@ -25,7 +25,7 @@ body {
     padding-bottom: 500px;
     text-align: center;
     font-size: 1.2rem;
-  }
+}
 
 /* Style the modal */
 .modal {
@@ -39,91 +39,93 @@ body {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     font-size: 1.3rem;
-  }
-  
-  /* Modal content */
-  .modal-content {
+}
+
+/* Modal content */
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid black;
     width: 80%;
-  }
+}
 
-  /* Modal content list items */
-  .modal-content li {
+/* Modal content list items */
+.modal-content li {
     margin-bottom: 15px;
-  }
-  
-  /* Close button */
-  .close {
+}
+
+/* Close button */
+.close {
     color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  /* Close button animation */
-  .close:hover,
-  .close:focus {
+}
+
+/* Close button animation */
+.close:hover,
+.close:focus {
     color: rgb(228, 211, 134);
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Modal Open button */
-  #openModalBtn {
+}
+
+/* Modal Open button */
+#openModalBtn {
     position: absolute;
     width: 30%;
     border-radius: 10px;
-  }
-  
-  /* Start Quiz Button */
-  #startQuizBtn {
+}
+
+/* Start Quiz Button */
+#startQuizBtn {
     border-radius: 10px;
     text-decoration: none;
-  }
+}
 
-  .hide {
-    display : none;
-  }
+.hide {
+    display: none;
+}
 
-  /* Styles for the quiz container header */
-  .quiz-container header h1 {
+/* Styles for the quiz container header */
+.quiz-container header h1 {
     padding-top: 50px;
     margin: 0;
     text-align: center;
-  }
-  
-  /* Styles for anchor tag header to return home */
-  .quiz-container header h1 a {
+}
+
+/* Styles for anchor tag header to return home */
+.quiz-container header h1 a {
     color: black;
     padding-top: 10px;
-  }
+}
 
-  /* Styles for the timer display */
-  #timer {
+/* Styles for the timer display */
+#timer {
     font-size: 1.4rem;
     text-align: center;
     padding-top: 1.1rem;
-  }
+}
 
-  .timer-red {
+/* Class to turn timer red for js timer function */
+.timer-red {
     color: red;
-  }
-  
-  .timer-black {
-    color: black;
-  }
+}
 
-  /* Styles for Question counter */
-  #question-counter {
+/* Default timer color */
+.timer-black {
+    color: black;
+}
+
+/* Styles for Question counter */
+#question-counter {
     padding-top: 1.1rem;
     font-size: 1.4rem;
     text-align: center;
-  }
+}
 
-  /* Styles for the quiz container */
+/* Styles for the quiz container */
 .quiz-container {
     background-color: rgb(228, 211, 134);
     background-image: linear-gradient(315deg, rgb(228, 211, 134) 0%, #f5f7fa 100%);
@@ -132,47 +134,47 @@ body {
     width: 600px;
     max-width: 95vw;
     overflow: hidden;
-  }
+}
 
 /* Styles for the quiz content area */
 .quiz-top {
     padding: 1rem 3rem;
-  }
-  
-  /* Styles for the quiz question display */
-  h2 {
+}
+
+/* Styles for the quiz question display */
+h2 {
     padding: 1.3rem;
     text-align: center;
     margin: 0;
-  }
-  
-  /* Styles for the unordered list (answer choices) */
-  ul {
+}
+
+/* Styles for the unordered list (answer choices) */
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  /* Styles for each list item (answer choice) */
-  ul li {
+}
+
+/* Styles for each list item (answer choice) */
+ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
-  }
+}
 
-  /* Pointer for the answer text */
-  label {
+/* Pointer for the answer text */
+label {
     cursor: pointer;
-  }
-  
-  /* Styles for the radio buttons */
-  #a,
-  #b,
-  #c,
-  #d {
+}
+
+/* Styles for the radio buttons */
+#a,
+#b,
+#c,
+#d {
     accent-color: brown;
     cursor: pointer;
-  }
+}
 
-  /* Styles for the buttons */
+/* Styles for the buttons */
 button {
     background-color: black;
     color: #fff;
@@ -183,15 +185,15 @@ button {
     font-size: 1.1rem;
     font-family: inherit;
     padding: 1.3rem;
-  }
-  
-  /* Styles for the button on hover */
-  button:hover {
+}
+
+/* Styles for the button on hover */
+button:hover {
     background-color: rgb(228, 211, 134);
-  }
-  
-  /* Styles for the button when focused */
-  button:focus {
+}
+
+/* Styles for the button when focused */
+button:focus {
     outline: none;
     background-color: black;
-  }
+}
