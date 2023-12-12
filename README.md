@@ -318,8 +318,6 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
 ## Credits
 
-When it came to building the quiz I gained inspiration from YouTube videos with channels such as:
-* [CodingNepal](https://www.youtube.com/@CodingNepal)
-* [Codehal](https://www.youtube.com/@codehal)
+* The tutorial via [Foolish Developer](https://foolishdeveloper.com/javascript-quiz-app/) helped with the basic structure of the quiz. I made changes to various functions where applicable, which differs mine from the tutorial. Whilst keeping functionality.
 
-These sparked my interest and allowed my to build my very own quiz. I also used [w3schools](https://www.w3schools.com/js/default.asp) to help with writing an array and additional features within my quiz. I also went back over Code Institutes study material to utilize as much Javascript as I could. Using these allowed me to create features such as event listeners and my question counter and timer features.
+* The timer has been iterated from Stack Overflow [Stack Overflow](https://stackoverflow.com/questions/63775740/how-to-create-the-easiest-countdown-timer). I made updates to the function to use classes from CSS.
