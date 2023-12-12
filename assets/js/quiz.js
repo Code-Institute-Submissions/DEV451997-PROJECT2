@@ -100,6 +100,11 @@ function endQuiz() {
     quizContainer.style.display = "none"; // Hide the quiz container
 }
 
+function returnToHome() {
+    // Navigate to the Home page
+    window.location.href = "index.html";
+}
+
 // Shuffle the quiz questions before starting the quiz
 shuffleArray(quizData);
 
