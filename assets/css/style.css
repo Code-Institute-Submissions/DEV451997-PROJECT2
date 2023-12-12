@@ -136,6 +136,18 @@ body {
     overflow: hidden;
 }
 
+/* Styles for quiz end sections */
+.quiz-end {
+    background-color: rgb(228, 211, 134);
+    background-image: linear-gradient(315deg, rgb(228, 211, 134) 0%, #f5f7fa 100%);
+    border-radius: 15px;
+}
+
+/* Styles for end of quiz buttons */
+.quiz-end button {
+    border-radius: 10px;
+}
+
 /* Styles for the quiz content area */
 .quiz-top {
     padding: 1rem 3rem;

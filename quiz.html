@@ -34,19 +34,24 @@
         <button id="submit">Next</button> <!-- Next button to move to the next question -->
     </div>
 
-    <!-- Quiz end section if the timer expires -->
-    <div id="quiz-end-section" class="hide display-red">
-        <h2>You ran out of Time!😢</h2>
-        <h2>You answered <span id="message"></span> questions correctly</h2>
-        <button onclick="history.go(0)">Try Again?</button>
-        <button><a href="index.html" style="color: white; text-decoration: none;">Return to Home</a></button>
-    </div>
+    <!-- Div for end quiz messages -->
+    <div class="quiz-end">
 
-    <!-- Quiz end section when the quiz is finished -->
-    <div id="quiz-end-section2" class="hide display-red">
-        <h2>You answered <span id="message2"></span> questions correctly</h2>
-        <button onclick="history.go(0)">Try Again?</button>
-        <button><a href="index.html" style="color: white; text-decoration: none;">Return to Home</a></button>
+        <!-- Quiz end section if the timer expires -->
+        <div id="quiz-end-section" class="hide display-red">
+            <h2>You ran out of Time!😢</h2>
+            <h2>You answered <span id="message"></span> questions correctly</h2>
+            <button onclick="history.go(0)">Try Again?</button>
+            <button><a href="index.html" style="color: white; text-decoration: none;">Return to Home</a></button>
+        </div>
+
+        <!-- Quiz end section when the quiz is finished -->
+        <div id="quiz-end-section2" class="hide display-red">
+            <h2>You answered <span id="message2"></span> questions correctly</h2>
+            <button onclick="history.go(0)">Try Again?</button>
+            <button><a href="index.html" style="color: white; text-decoration: none;">Return to Home</a></button>
+        </div>
+
     </div>
 
     <!-- External JavaScript files -->
