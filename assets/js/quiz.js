@@ -2,10 +2,10 @@
 const quiz = document.getElementById("quiz");
 const answerElements = document.querySelectorAll(".answer");
 const questionElement = document.getElementById("question");
-const a_text = document.getElementById("a_text");
-const b_text = document.getElementById("b_text");
-const c_text = document.getElementById("c_text");
-const d_text = document.getElementById("d_text");
+const a_text = document.getElementById("choice_a_text");
+const b_text = document.getElementById("choice_b_text");
+const c_text = document.getElementById("choice_c_text");
+const d_text = document.getElementById("choice_d_text");
 const submitButton = document.getElementById("submit");
 const timerElement = document.getElementById("timer");
 
@@ -41,10 +41,10 @@ let loadQuiz = () => {
     deselectAnswers();
     let currentQuizData = quizData[currentQuiz];
     questionElement.innerText = currentQuizData.question;
-    a_text.innerText = currentQuizData.a;
-    b_text.innerText = currentQuizData.b;
-    c_text.innerText = currentQuizData.c;
-    d_text.innerText = currentQuizData.d;
+    choice_a_text.innerText = currentQuizData.a;
+    choice_b_text.innerText = currentQuizData.b;
+    choice_c_text.innerText = currentQuizData.c;
+    choice_d_text.innerText = currentQuizData.d;
 
     // Counts what questions the user is on and increments by one
     let questionCounterElement = document.getElementById("question-counter");
