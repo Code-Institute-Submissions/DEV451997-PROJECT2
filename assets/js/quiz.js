@@ -2,10 +2,10 @@
 const quiz = document.getElementById("quiz");
 const answerElements = document.querySelectorAll(".answer");
 const questionElement = document.getElementById("question");
-const a_text = document.getElementById("choice_a_text");
-const b_text = document.getElementById("choice_b_text");
-const c_text = document.getElementById("choice_c_text");
-const d_text = document.getElementById("choice_d_text");
+const choice_a_text = document.getElementById("choice_a_text");
+const choice_b_text = document.getElementById("choice_b_text");
+const choice_c_text = document.getElementById("choice_c_text");
+const choice_d_text = document.getElementById("choice_d_text");
 const submitButton = document.getElementById("submit");
 const timerElement = document.getElementById("timer");
 
