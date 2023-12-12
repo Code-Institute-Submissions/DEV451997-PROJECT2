@@ -97,6 +97,19 @@ The above features can be seen in the image of the main quiz.
 
 As shown above the user is shown the same end screen with slight variations whether they complete the quiz or run out of time. In both instances they are given the same options to play/try again or return home whilst being shown their score out of 15.
 
+## Functionality Testing
+
+The functionality of the Travel Hub was tested to ensure a seamless user experience. Detailed tests, along with screen recordings, were conducted for key functionalities during the user story testing phase. Please refer to the User Story Testing section below for a comprehensive overview of the functionality tests performed, including:
+
+* Quiz Rules Modal
+* Start Quiz Button
+* Home Link in Quiz
+* Question Counter
+* Quiz Timer
+* Question and Answers
+* Quiz Next Button
+* Play/Try Again Buttons and Return Home Button
+
 ## User Stories
 
 User Story 1: As a keen traveller I want to:
@@ -309,12 +322,33 @@ The site was tested on the following devices:
 
 ### GitHub Pages
 
-The site was deployed to GitHub pages. The steps to deploy are as follows: 
-* In the GitHub repository, navigate to the Settings tab at the top of the page.
-* In the left hand menu find and select 'Pages'.
-* From the source select Branch: main.
-* Click 'Save'.
-* A link will be displayed when published successfully which can be shared and accessed through deployments.
+1. Working in GitPod:
+* I develop and test my project locally using GitPod, ensuring that all functionalities work as expected.
+
+2. Commit Changes:
+* Once I am satisfied with the changes, I commit my work using Git in GitPod. This involves staging my changes and creating a new commit with a descriptive message.
+* git add .
+* git commit -m "My descriptive commit message here"
+
+3. Push Changes to GitHub:
+* I push my committed changes to my GitHub repository.
+* git push 
+
+5. Navigate to GitHub Pages Settings:
+* On my GitHub repository, I navigate to the "Settings" tab located near the top right of the page.
+
+6. Access GitHub Pages Section:
+* In the left-hand menu, I find and select the "Pages" section. This is where I can configure GitHub Pages settings for my repository.
+
+7. Choose Branch:
+* In the "Source" section, I find a dropdown menu under "Branch." I select the branch from which I want to deploy my site. In most cases, it's set to "main."
+
+8. Save:
+* I click the "Save" button to apply the selected branch for GitHub Pages deployment.
+
+9. Deployment Confirmation:
+* Upon successful deployment, a link is displayed on the GitHub Pages section. I can click the link to access and share my deployed site.
+By following these steps, I ensure that my project is not only available on GitHub but is also deployed and accessible through GitHub Pages.
 
 ## Credits
 
